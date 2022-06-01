@@ -1,0 +1,27 @@
+\input pictex
+\magnification=\magstep1
+\nopagenumbers
+
+
+\beginpicture
+\setcoordinatesystem units <.03truein, .2truein> 
+\setplotarea x from 55 to 180, y from  30 to 40
+\put {Implied Volatility} at 120 41
+\axis left 
+ %label {(\%)} 
+ ticks   numbered from  30 to 40 by 1 
+ /
+\axis bottom
+ticks numbered from 60 to 180 by 10
+/
+% You can show an implied volatility like this:
+\put {$\scriptstyle\bullet$} at 60 32.0  
+% And its confidence interval like this:
+\setplotsymbol ({$\cdot$})
+\plot 60 31.7  60 32.3 / 
+\endpicture
+\vfill\eject\end
+
+
+
+
